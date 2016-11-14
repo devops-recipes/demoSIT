@@ -19,7 +19,7 @@ setupTestEnv() {
 
 main() {
   setupTestEnv
-  npm test-core
+  npm test test-core
 }
 
 main
