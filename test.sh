@@ -17,9 +17,14 @@ setupTestEnv() {
   echo "Completed Testing Env setup" $RES_REPO
 }
 
+test(){
+  pushd /build/IN/$RES_REPO/gitRepo
+  npm test test-core
+  popd
+}
 main() {
   setupTestEnv
-  npm test test-core
+  test
 }
 
 main
