@@ -26,7 +26,7 @@ describe('Core Test Suite',
           function (err, res) {
             (err === null).should.equal(true);
             res.statusCode.should.equal(200);
-            res.body.should.have.property('time');
+            res.body.should.have.property('time1');
             done();
           }
         );
