@@ -19,7 +19,7 @@ setupTestEnv() {
 
 test(){
   pushd /build/IN/$RES_REPO/gitRepo
-  npm test test-core
+  npm test-core
   popd
 }
 main() {
