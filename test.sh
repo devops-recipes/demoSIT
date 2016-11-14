@@ -19,7 +19,7 @@ setupTestEnv() {
 
 test(){
   pushd /build/IN/$RES_REPO/gitRepo
-  npm test-core
+  multi="xunit=shippable/testresults/test.xml json=shippable/testresults/test.json" npm run-script test-core
   popd
 }
 main() {
