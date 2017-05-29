@@ -23,7 +23,6 @@ describe(util.format('%s1 - %s', testSuiteNum, testSuiteDesc),
         logger.info('Creating an empty testAccounts object');
         nconf.set('testAccounts', {});
         assert.notProperty(nconf.get('testAccounts'), 'shipayeone');
-
         return done();
       }
     );

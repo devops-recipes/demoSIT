@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-export RES_REPO=sit-repo
+export RES_REPO=sit_repo
 export RES_PARAMS=$1
 
 setupTestEnv() {
